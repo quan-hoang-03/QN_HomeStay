@@ -7,6 +7,7 @@ import {provideAnimations} from "@angular/platform-browser/animations";
 import {provideRouter} from "@angular/router";
 import { routes } from './app-routing.module';
 import {Button} from "primeng/button";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {Button} from "primeng/button";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Button
+    Button,
+    FontAwesomeModule
   ],
   providers: [
     provideClientHydration(),
