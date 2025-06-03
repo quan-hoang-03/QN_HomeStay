@@ -8,6 +8,8 @@ import {provideRouter} from "@angular/router";
 import { routes } from './app-routing.module';
 import {Button} from "primeng/button";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FooterComponent} from "./layout/footer/footer.component";
+import {NavbarComponent} from "./layout/navbar/navbar.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     Button,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FooterComponent,
+    NavbarComponent
   ],
   providers: [
     provideClientHydration(),
